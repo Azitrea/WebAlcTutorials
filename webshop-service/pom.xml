@@ -11,7 +11,7 @@
 
     <artifactId>webshop-service</artifactId>
 
-    <name>webshop.service</name>
+    <name>webshop-service</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
