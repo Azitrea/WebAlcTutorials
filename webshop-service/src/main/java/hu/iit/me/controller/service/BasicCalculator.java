@@ -1,4 +1,4 @@
-package hu.iit.me.service;
+package hu.iit.me.controller.service;
 
 public class BasicCalculator implements Calculator {
 

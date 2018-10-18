@@ -1,4 +1,4 @@
-package hu.iit.me;
+package hu.iit.me.controller;
 
 /**
  * Hello world!

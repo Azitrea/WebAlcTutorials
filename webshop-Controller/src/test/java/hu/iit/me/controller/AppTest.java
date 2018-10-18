@@ -1,4 +1,4 @@
-package hu.iit.me;
+package hu.iit.me.controller;
 
 import static org.junit.Assert.assertTrue;
 

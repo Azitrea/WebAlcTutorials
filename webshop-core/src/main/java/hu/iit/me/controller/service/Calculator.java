@@ -1,4 +1,4 @@
-package hu.iit.me.service;
+package hu.iit.me.controller.service;
 
 public interface Calculator {
 

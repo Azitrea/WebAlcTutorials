@@ -1,4 +1,4 @@
-package hu.iit.me.model;
+package hu.iit.me.controller.model;
 
 import java.util.Map;
 

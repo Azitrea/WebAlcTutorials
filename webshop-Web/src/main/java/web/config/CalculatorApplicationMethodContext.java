@@ -1,8 +1,9 @@
 package web.config;
 
-import hu.iit.me.service.BasicCalculator;
-import hu.iit.me.service.Calculator;
+import hu.iit.me.controller.service.BasicCalculator;
+import hu.iit.me.controller.service.Calculator;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
