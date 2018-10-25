@@ -13,6 +13,7 @@
     <module>webshop-Web</module>
     <module>webshop-Controller</module>
     <module>webshop-service</module>
+      <module>webshop-dao</module>
   </modules>
 
   <name>webshopexercise</name>
