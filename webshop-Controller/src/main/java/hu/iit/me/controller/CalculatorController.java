@@ -1,11 +1,9 @@
 package hu.iit.me.controller;
 
 import hu.iit.me.controller.service.Calculator;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.awt.*;
 
@@ -20,7 +18,7 @@ public class CalculatorController {
 
     @RequestMapping(value = "/add", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public String add(@RequestParam(value = "a") double a,@RequestParam(value = "b") double b){
+    public String add(@RequestParam(value = "a") double a,@RequestParam(value = "b") double b) throws IllegalArgumentException{
         return String.valueOf(calculator.add(a,b));
     }
 
@@ -40,5 +38,12 @@ public class CalculatorController {
     @ResponseBody
     public String div(@RequestParam(value = "a") double a,@RequestParam(value = "b") double b){
         return String.valueOf(calculator.divide(a,b));
+    }
+
+
+    @ResponseStatus(value = HttpStatus.I_AM_A_TEAPOT, reason = "Argument is illegal, I am a teapot")
+    @ExceptionHandler(IllegalArgumentException.class)
+    public void illegalArgumentumHandler(){
+        //TODO
     }
 }
